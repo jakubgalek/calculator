@@ -1,0 +1,110 @@
+/* Calculator.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.calculator {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Ekran wyświetlania */
+.display {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input {
+  font-size: 24px;
+  padding: 10px;
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  text-align: right;
+}
+
+.result {
+  font-size: 20px;
+  padding: 5px;
+  color: #888;
+  text-align: right;
+}
+
+/* Układ przycisków: funkcje + główne */
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 10px;
+}
+
+.functions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Wspólne style przycisków */
+button {
+  padding: 20px;
+  font-size: 18px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:active {
+  background-color: #bbb;
+}
+
+/* Specjalne przyciski */
+button.clear,
+button.backspace {
+  background-color: #f56b00;
+  color: white;
+}
+
+button.operator {
+  background-color: #f2a104;
+  color: white;
+}
+
+button.operator:hover {
+  background-color: #e59400;
+}
+
+button.number {
+  background-color: #fff;
+}
+
+button.equal {
+  grid-column: span 2;
+  background-color: #4caf50;
+  color: white;
+}
+
+button.advanced {
+  background-color: #3f9ae5;
+  color: white;
+}
+
+button.advanced:hover {
+  background-color: #357ab7;
+}
